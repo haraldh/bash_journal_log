@@ -1,0 +1,7 @@
+Final functionality:
+
+$ log_open MYAPP journal-or-kmsg
+$ log_info && log_msg "Test"
+$ log_info "Test"
+$ echo "Test" | log_info -
+$ log_debug "Test"
