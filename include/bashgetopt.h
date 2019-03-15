@@ -23,7 +23,7 @@
 #if !defined (__BASH_GETOPT_H)
 #  define __BASH_GETOPT_H
 
-#include <stdc.h>
+#include "stdc.h"
 
 extern char *list_optarg;
 

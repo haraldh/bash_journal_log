@@ -20,3 +20,6 @@ clean:
 install: log.so
 	#install .sh $(PREFIX)/bin
 	install log.so $(PREFIX)/lib
+
+bindgen:
+	@(cd include; bindgen --whitelist-function 'reset_internal_getopt|internal_getopt|builtin_usage' --whitelist-type 'builtin' all.h)
